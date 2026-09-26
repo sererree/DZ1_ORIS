@@ -4,8 +4,13 @@
 body {
     background-color: white;
     font-family: 'Afacad', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
-
 
 .weather-box {
     position: absolute;
@@ -35,7 +40,7 @@ body {
 
 .center-search-text {
     text-align: center;
-    margin-top: 450px; 
+     
 
     h1 {
         margin: 0;
