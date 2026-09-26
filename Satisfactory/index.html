@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Official Satisfactory Wiki</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Верхняя панель сайта -->
+    <header id="wgg-netbar">
+        <div class="wgg-netbar__left">
+            <div class="wgg-netbar__logo">
+                <a href="https://satisfactory.wiki.gg/" aria-label="wiki.gg">
+                    <img height="25" alt="wiki.gg logo" src="./Official Satisfactory Wiki_files/Network_header_logo.svg">
+                </a>
+            </div>
+            <a class="wgg-netbar__deals-link" href="https://www.indiedeals.gg/" target="_blank" rel="noopener" title="Indie game deals">
+                <img class="wgg-netbar__deals-link__icon" src="./Official Satisfactory Wiki_files/Network_indiedeals_logo.png" alt="">
+                <span class="wgg-netbar__deals-link__label">Indie game deals</span>
+            </a>
+        </div>
+
+        <nav class="wgg-netbar__user-links" aria-label="Personal tools">
+            <div id="p-personal">
+                <ul>
+                    <li id="pt-themes">
+                        <span>Current theme: Light</span>
+                    </li>
+                    <li id="pt-createaccount">
+                        <a href="https://satisfactory.wiki.gg/wiki/Special:CreateAccount?returnto=Satisfactory+Wiki">Create account</a>
+                    </li>
+                    <li id="pt-login">
+                        <a href="https://satisfactory.wiki.gg/wiki/Special:UserLogin?returnto=Satisfactory+Wiki" accesskey="o">Log in</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="logo2">
+        <a href="https://satisfactory.wiki.gg/">
+            <img src="./Official Satisfactory Wiki_files/logo2.jpg" class="sfwiki">
+        </a>
+    </div>
+
+
+    <!-- Основной контейнер страницы -->
+    <div class="content-wrapper">
+
+        <!-- Навигационное меню -->
+        <nav id="mw-navigation" aria-label="Navigation menu">
+
+            <div id="mw-head">
+
+                <!-- Левое меню (Пространства имен) -->
+                <div id="left-navigation">
+                    <div id="p-namespaces">
+                        <h3>Namespaces</h3>
+                        <ul>
+                            <li id="ca-nstab-main" class="selected">
+                                <a href="https://satisfactory.wiki.gg/" accesskey="c">Main page</a>
+                            </li>
+                            <li id="ca-talk">
+                                <a href="https://satisfactory.wiki.gg/wiki/Talk:Satisfactory_Wiki" rel="discussion" accesskey="t">Discussion</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Правое меню (Вкладки просмотра и поиск) -->
+                <div id="right-navigation">
+
+                    <!-- Вкладки действий -->
+                    <div id="p-views">
+                        <h3>Views</h3>
+                        <ul>
+                            <li id="ca-view" class="selected">
+                                <a href="https://satisfactory.wiki.gg/">Read</a>
+                            </li>
+                            <li id="ca-viewsource">
+                                <a href="https://satisfactory.wiki.gg/wiki/Satisfactory_Wiki?action=edit" accesskey="e">View source</a>
+                            </li>
+                            <li id="ca-history">
+                                <a href="https://satisfactory.wiki.gg/wiki/Satisfactory_Wiki?action=history" accesskey="h">View history</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Форма поиска -->
+                    <div id="p-search" role="search">
+                        <h3>Search</h3>
+                        <form action="https://satisfactory.wiki.gg/wiki/Special:Search" id="searchform">
+                            <div id="simpleSearch">
+                                <input type="search" name="search" placeholder="Search Satisfactory Wiki" aria-label="Search Satisfactory Wiki" accesskey="f" id="searchInput">
+                                <input type="submit" name="fulltext" value="Search" class="searchButton">
+                                <input type="submit" name="go" value="Go" class="searchButton">
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="page-layout">
+        <!-- Левая колонка сайдбара -->
+        <div class="sidebar-column">
+            <nav id="mw-panel" aria-label="Site navigation">
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation menu"></button>
+
+                <div id="p-logo" role="banner">
+                    <a class="mw-wiki-logo" href="https://satisfactory.wiki.gg/" title="Visit the main page"></a>
+                </div>
+
+                <div id="p-Navigation" class="portal">
+                    <h3 id="p-Navigation-label">
+                        <span>Navigation</span>
+                    </h3>
+                    <div class="body">
+                        <ul>
+                            <li id="n-mainpage-description">
+                                <a href="https://satisfactory.wiki.gg/" title="Visit the main page [alt-shift-z]" accesskey="z">Main page</a>
+                            </li>
+                            <li id="n-portal">
+                                <a href="https://satisfactory.wiki.gg/wiki/Satisfactory_Wiki:Community_portal" title="About the project, what you can do, where to find things">Community portal</a>
+                            </li>
+                            <li id="n-recentchanges">
+                                <a href="https://satisfactory.wiki.gg/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a>
+                            </li>
+                            <li id="n-randompage">
+                                <a href="https://satisfactory.wiki.gg/wiki/Special:Random" title="Load a random page [alt-shift-x]" accesskey="x">Random page</a>
+                            </li>
+                            <li id="n-Admin-noticeboard">
+                                <a href="https://satisfactory.wiki.gg/wiki/Satisfactory_Wiki:Admin_noticeboard">Admin noticeboard</a>
+                            </li>
+                            <li id="n-Wiki-rules">
+                                <a href="https://satisfactory.wiki.gg/wiki/Satisfactory_Wiki:Rules">Wiki rules</a>
+                            </li>
+                            <li id="n-Style-guide">
+                                <a href="https://satisfactory.wiki.gg/wiki/Satisfactory_Wiki:Style_guide">Style guide</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="portal" aria-label="Useful pages">
+                <div id="p-Useful_pages">
+                    <h3><span>Useful pages</span></h3>
+                    <div class="body">
+                        <ul>
+                            <li id="n-Buildings">
+                                <a href="https://satisfactory.wiki.gg/wiki/Category:Buildings">Buildings</a>
+                            </li>
+                            <li id="n-Items">
+                                <a href="https://satisfactory.wiki.gg/wiki/Category:Items">Items</a>
+                            </li>
+                            <li id="n-Fluids">
+                                <a href="https://satisfactory.wiki.gg/wiki/Category:Fluids">Fluids</a>
+                            </li>
+                            <li id="n-Milestones">
+                                <a href="https://satisfactory.wiki.gg/wiki/Milestones">Milestones</a>
+                            </li>
+                            <li id="n-MAM">
+                                <a href="https://satisfactory.wiki.gg/wiki/MAM">MAM</a>
+                            </li>
+                            <li id="n-AWESOME-Sink">
+                                <a href="https://satisfactory.wiki.gg/wiki/AWESOME_Sink">AWESOME Sink</a>
+                            </li>
+                            <li id="n-Space-Elevator">
+                                <a href="https://satisfactory.wiki.gg/wiki/Space_Elevator">Space Elevator</a>
+                            </li>
+                            <li id="n-Power">
+                                <a href="https://satisfactory.wiki.gg/wiki/Power">Power</a>
+                            </li>
+                            <li id="n-Future-content">
+                                <a href="https://satisfactory.wiki.gg/wiki/Future_content">Future content</a>
+                            </li>
+                            <li id="n-Community-tools">
+                                <a href="https://satisfactory.wiki.gg/wiki/Online_tools">Community tools</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="portal" aria-label="Satisfactory links">
+                <div id="p-Satisfactory_links">
+                    <h3><span>Satisfactory links</span></h3>
+                    <div class="body">
+                        <ul>
+                            <li id="n-Official-website">
+                                <a href="https://www.satisfactorygame.com/" rel="nofollow">Official website</a>
+                            </li>
+                            <li id="n-Q-A-site">
+                                <a href="https://questions.satisfactorygame.com/" rel="nofollow">Q&A site</a>
+                            </li>
+                            <li id="n-Official-merch">
+                                <a href="https://lizarddoggo.com/" rel="nofollow">Official merch</a>
+                            </li>
+                            <li id="n-Steam">
+                                <a href="https://store.steampowered.com/app/526870/Satisfactory/" rel="nofollow">Steam</a>
+                            </li>
+                            <li id="n-Epic-Games-Store">
+                                <a href="https://www.epicgames.com/store/en-US/product/satisfactory/home" rel="nofollow">Epic Games Store</a>
+                            </li>
+                            <li id="n-Humble-Bundle">
+                                <a href="https://www.humblebundle.com/store/satisfactory" rel="nofollow">Humble Bundle</a>
+                            </li>
+                            <li id="n-Xbox">
+                                <a href="https://www.xbox.com/en-US/games/store/satisfactory/9NPR2CG6S95Q" rel="nofollow">Xbox</a>
+                            </li>
+                            <li id="n-PlayStation">
+                                <a href="https://store.playstation.com/en-us/product/UP4664-PPSA16634_00-SATISFACTORYGAME" rel="nofollow">PlayStation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="p-tb" class="mw-portlet mw-portlet-tb vector-menu-portal portal vector-menu" aria-labelledby="p-tb-label">
+                <h3 id="p-tb-label" class="vector-menu-heading ">
+                    <span class="vector-menu-heading-label">Tools</span>
+                </h3>
+                <div class="vector-menu-content body">
+
+                    <ul class="vector-menu-content-list menu">
+
+                        <li id="t-whatlinkshere" class="mw-list-item"><a href="https://satisfactory.wiki.gg/wiki/Special:WhatLinksHere/Satisfactory_Wiki" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j"><span>What links here</span></a></li>
+                        <li id="t-recentchangeslinked" class="mw-list-item"><a href="https://satisfactory.wiki.gg/wiki/Special:RecentChangesLinked/Satisfactory_Wiki" rel="nofollow" title="Recent changes in pages linked from this page"><span>Related changes</span></a></li>
+                        <li id="t-newpage" class="mw-list-item"><a href="https://satisfactory.wiki.gg/wiki/Special:NewPage" accesskey="]"><span>New page</span></a></li>
+                        <li id="t-specialpages" class="mw-list-item"><a href="https://satisfactory.wiki.gg/wiki/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q"><span>Special pages</span></a></li>
+                        <li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p"><span>Printable version</span></a></li>
+                        <li id="t-info" class="mw-list-item"><a href="https://satisfactory.wiki.gg/wiki/Satisfactory_Wiki?action=info" title="More information about this page"><span>Page information</span></a></li>
+                        <li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://satisfactory.wiki.gg/wiki/Satisfactory_Wiki?action=dbdata"><span>Database data</span></a></li>
+                        <li id="t-cite" class="mw-list-item"><a href="https://satisfactory.wiki.gg/wiki/Special:CiteThisPage?page=Satisfactory_Wiki&amp;id=56208&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li>
+                        <li class="mw-list-item mw-list-item-js" id="t-collapsible-toggle-all"><a href="https://satisfactory.wiki.gg/#" title="Expand all collapsible elements on the current page" role="button" aria-expanded="false"><span>Expand all</span></a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+            <div id="p-lang" class="mw-portlet mw-portlet-lang vector-menu-portal portal vector-menu" aria-labelledby="p-lang-label">
+                <h3 id="p-lang-label" class="vector-menu-heading ">
+                    <span class="vector-menu-heading-label">In other languages</span>
+                </h3>
+                <div class="vector-menu-content body">
+
+                    <ul class="vector-menu-content-list menu">
+
+                        <li class="interlanguage-link interwiki-de mw-list-item"><a href="https://satisfactory.wiki.gg/de/wiki/" title="German" lang="de" hreflang="de" data-title="" data-language-autonym="Deutsch" data-language-local-name="German" class="interlanguage-link-target"><span>Deutsch</span></a></li>
+                        <li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://satisfactory.wiki.gg/fr/wiki/" title="French" lang="fr" hreflang="fr" data-title="" data-language-autonym="Français" data-language-local-name="French" class="interlanguage-link-target"><span>Français</span></a></li>
+                        <li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://satisfactory.wiki.gg/ru/wiki/" title="Russian" lang="ru" hreflang="ru" data-title="" data-language-autonym="Русский" data-language-local-name="Russian" class="interlanguage-link-target"><span>Русский</span></a></li>
+                        <li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://satisfactory.wiki.gg/wiki/Satisfactory_Wiki/pt" title="Satisfactory Wiki/pt – Portuguese" lang="pt" hreflang="pt" data-title="Satisfactory Wiki/pt" data-language-autonym="Português" data-language-local-name="Portuguese" class="interlanguage-link-target"><span>Português</span></a></li>
+                        <li class="interlanguage-link interwiki-it mw-list-item"><a href="https://satisfactory.wiki.gg/wiki/Satisfactory_Wiki/it" title="Satisfactory Wiki/it – Italian" lang="it" hreflang="it" data-title="Satisfactory Wiki/it" data-language-autonym="Italiano" data-language-local-name="Italian" class="interlanguage-link-target"><span>Italiano</span></a></li>
+                        <li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://satisfactory.wiki.gg/wiki/Satisfactory_Wiki/zh" title="Satisfactory Wiki/zh – Chinese" lang="zh" hreflang="zh" data-title="Satisfactory Wiki/zh" data-language-autonym="中文" data-language-local-name="Chinese" class="interlanguage-link-target"><span>中文</span></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Центральная колонка с основным контентом -->
+        <div class="main-content-column">
+            <div id="content" class="mw-body" role="main">
+                <!-- Блок рекламного баннера с картинкой -->
+                <aside id="wikigg-sl-header">
+                    <div class="wikigg-showcase__unit">
+                        <a target="_blank" href="https://app.wiki.gg/showcase/go?utm_campaign=iio-29ed9a83-1789064634710&amp;utm_medium=bannerheader&amp;utm_source=satisfactory.wiki.gg&amp;location=desktop">
+                            <img src="./Official Satisfactory Wiki_files/LEADERBOARD.jpg" alt="Wiki showcase banner">
+                        </a>
+                    </div>
+                </aside>
+
+                <div class="content-body">
+                    <main>
+                        <a id="top"></a>
+                        <div id="siteNotice"></div>
+                        <div class="mw-indicators"></div>
+
+                        <h1 id="firstHeading" class="firstHeading" style="display: none">
+                            <span class="mw-page-title-main">Satisfactory Wiki</span>
+                        </h1>
+
+                        <div id="bodyContent" class="vector-body">
+                            
+                            <div id="contentSub"></div>
+                            <div id="contentSub2"></div>
+
+                            <div id="jump-to-nav"></div>
+                            
+
+                            <div id="mw-content-text" class="mw-body-content">
+                                <div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr">
+                                    <div id="fp-container">
+                                        <div id="fp-top" class="fp-section">
+                                            <div class="fpbox" style="text-align: center;">
+                                                <div class="welcome">
+                                                    <div class="fpHeader">
+                                                        <span class="fpHeaderText">Welcome&nbsp;to the&nbsp;official Satisfactory Wiki</span>
+                                                    </div>
+                                                </div>
+                                                <div style="padding:0 5px 5px 5px">
+                                                    <div>the <i>Satisfactory</i> guide and information source written and maintained by the community.</div>
+                                                    <p>We are currently maintaining <a href="https://satisfactory.wiki.gg/wiki/Special:Statistics" title="Special:Statistics">9,465 pages (865 articles)</a>.</p>
+                                                    <p>Please feel free to contribute by creating new articles or expanding existing ones.</p>
+                                                    <p>
+                                                        Also check out the wiki in other languages:<br>
+                                                        <a href="https://satisfactory.wiki.gg/de/wiki/" class="extiw" title="de:">Deutsch</a> &nbsp;•&nbsp;
+                                                        <a href="https://satisfactory.wiki.gg/fr/wiki/" class="extiw" title="fr:">Français</a> &nbsp;•&nbsp;
+                                                        <a href="https://satisfactory.wiki.gg/ru/wiki/" class="extiw" title="ru:">Русский</a><br>
+                                                        <a href="https://satisfactory.wiki.gg/wiki/Category:Translation_projects" title="Category:Translation projects">other translation projects</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="fpbox mobilecollapsible" style="text-align: center;">
+                                                <div class="fpHeader">
+                                                    <span class="fpHeaderText">About Satisfactory</span>
+                                                </div>
+                                                <div class="body" style="text-align: left; padding:0 5px 5px 5px;">
+                                                    <p>
+                                                        <a href="https://satisfactory.wiki.gg/wiki/Satisfactory" title="Satisfactory">Satisfactory</a> is a game from
+                                                        <a href="https://satisfactory.wiki.gg/wiki/Coffee_Stain_Studios" title="Coffee Stain Studios">Coffee Stain Studios</a>,
+                                                        the creators of <a href="https://en.wikipedia.org/wiki/Goat_Simulator" class="extiw" title="wikipedia:Goat Simulator">Goat Simulator</a>
+                                                        and the <a rel="nofollow" class="external text" href="https://sanctum.gamepedia.com/">Sanctum</a> series.
+                                                        Satisfactory is a game of factory management and planet exploitation. As a pioneer working for
+                                                        <a href="https://satisfactory.wiki.gg/wiki/FICSIT_Inc." title="FICSIT Inc.">FICSIT Inc.</a>, you are dropped onto an alien
+                                                        planet with a handful of tools and must harvest the planet's natural resources to construct increasingly complex factories
+                                                        for automating all your resources needs. After you are set up, it will be time to build the
+                                                        <a href="https://satisfactory.wiki.gg/wiki/Space_Elevator" title="Space Elevator">Space Elevator</a> and begin Project Assembly,
+                                                        supplying FICSIT with increasingly numerous and complex components for their unknown purposes.
+                                                    </p>
+                                                    <p>
+                                                        The main focus of the game lies in constructing <a href="https://satisfactory.wiki.gg/wiki/Buildings" title="Buildings">buildings</a>
+                                                        and linking them together with <a href="https://satisfactory.wiki.gg/wiki/Conveyor_Belts" title="Conveyor Belts">Conveyor Belts</a>
+                                                        so that your factory can handle the entire process of item construction for you, including mining, transport, delivery, and generating
+                                                        <a href="https://satisfactory.wiki.gg/wiki/Power" title="Power">power</a> to keep itself running. More advanced pioneers will precisely
+                                                        adjust their buildings' <a href="https://satisfactory.wiki.gg/wiki/Clock_speed" title="Clock speed">clock speed</a> to maximize efficiency.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="fpbox mobilecollapsible" style="text-align: center;">
+                                        <div class="fpHeader"><div style="float: right; margin:5px;"></div><span class="fpHeaderText">Features</span></div>
+                                        <div class="body" style="text-align: left; padding:0 5px 5px 5px">
+                                            <ul>
+                                                <li>A variety of item and fluid logistics including <a href="https://satisfactory.wiki.gg/wiki/Conveyor_Belts" title="Conveyor Belts">Conveyor Belts</a>, <a href="https://satisfactory.wiki.gg/wiki/Conveyor_Lift" class="mw-redirect" title="Conveyor Lift">Lifts</a>, <a href="https://satisfactory.wiki.gg/wiki/Pipeline" class="mw-redirect" title="Pipeline">Pipes</a> and more; all for transporting resources, components, fluids or yourself around.</li>
+                                                <li><a href="https://satisfactory.wiki.gg/wiki/Buildings" title="Buildings">Buildings</a> for automated production of items. Hunt down <a href="https://satisfactory.wiki.gg/wiki/Power_Slug" title="Power Slug">Power Slugs</a> and <a href="https://satisfactory.wiki.gg/wiki/Somersloop" title="Somersloop">Somersloops</a> to improve their <a href="https://satisfactory.wiki.gg/wiki/Clock_speed" title="Clock speed">performance</a>.</li>
+                                                <li>A vast alien <a href="https://satisfactory.wiki.gg/wiki/World" title="World">world</a> to explore and exploit, featuring beautiful vistas and curious <a href="https://satisfactory.wiki.gg/wiki/Creatures" title="Creatures">creatures</a>, including the community favorite <a href="https://satisfactory.wiki.gg/wiki/Lizard_Doggo" title="Lizard Doggo">Lizard Doggo</a>.</li>
+                                                <li><a href="https://satisfactory.wiki.gg/wiki/Vehicles" title="Vehicles">Vehicles</a>, including <a href="https://satisfactory.wiki.gg/wiki/Truck" title="Truck">trucks</a> and <a href="https://satisfactory.wiki.gg/wiki/Electric_Locomotive" title="Electric Locomotive">trains</a> for transporting yourself and large quantities of resources over great distances.</li>
+                                                <li>A <a href="https://satisfactory.wiki.gg/wiki/Story" title="Story">story</a> to uncover - what is the 'Save the Day' program, and why is FICSIT counting on you?</li>
+                                                <li><a href="https://satisfactory.wiki.gg/wiki/Arachnophobia_Mode" class="mw-redirect" title="Arachnophobia Mode">Arachnophobia Mode</a>, to turn <a href="https://satisfactory.wiki.gg/wiki/Stinger" title="Stinger">scary spiders</a> into equally terrifying cat abominations.</li>
+                                                <li>No base defense.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="fpbox mobilecollapsible" id="fproles" style="text-align: center;">
+                                        <div class="fpHeader"><div style="float: right; margin:5px;"></div><span class="fpHeaderText">Featured Articles</span></div>
+                                        <div class="body fplinks">
+                                            <div style="display:inline-block; margin: 2px; max-width: 100px; text-align:center; vertical-align: top;"><a href="https://satisfactory.wiki.gg/wiki/MAM" title="MAM"><img alt="MAM" src="./Official Satisfactory Wiki_files/100px-MAM.png" decoding="async" loading="lazy" width="100" height="100" srcset="/images/thumb/MAM.png/150px-MAM.png?c85e80 1.5x, /images/thumb/MAM.png/200px-MAM.png?c85e80 2x" data-file-width="512" data-file-height="512"></a><br><a href="https://satisfactory.wiki.gg/wiki/MAM" title="MAM">MAM</a></div>
+                                            <div style="display:inline-block; margin: 2px; max-width: 100px; text-align:center; vertical-align: top;"><a href="https://satisfactory.wiki.gg/wiki/Coal-Powered_Generator" title="Coal-Powered Generator"><img alt="Coal-Powered Generator" src="./Official Satisfactory Wiki_files/100px-Coal-Powered_Generator.png" decoding="async" loading="lazy" width="100" height="100" srcset="/images/thumb/Coal-Powered_Generator.png/150px-Coal-Powered_Generator.png?564e1e 1.5x, /images/thumb/Coal-Powered_Generator.png/200px-Coal-Powered_Generator.png?564e1e 2x" data-file-width="512" data-file-height="512"></a><br><a href="https://satisfactory.wiki.gg/wiki/Coal-Powered_Generator" title="Coal-Powered Generator">Coal-Powered Generator</a></div>
+                                            <div style="display:inline-block; margin: 2px; max-width: 100px; text-align:center; vertical-align: top;"><a href="https://satisfactory.wiki.gg/wiki/Hard_Drive" title="Hard Drive"><img alt="Hard Drive" src="./Official Satisfactory Wiki_files/100px-Hard_Drive.png" decoding="async" loading="lazy" width="100" height="100" srcset="/images/thumb/Hard_Drive.png/150px-Hard_Drive.png?e40a92 1.5x, /images/thumb/Hard_Drive.png/200px-Hard_Drive.png?e40a92 2x" data-file-width="256" data-file-height="256"></a><br><a href="https://satisfactory.wiki.gg/wiki/Hard_Drive" title="Hard Drive">Hard Drive</a></div>
+                                            <div style="display:inline-block; margin: 2px; max-width: 100px; text-align:center; vertical-align: top;"><a href="https://satisfactory.wiki.gg/wiki/Lizard_Doggo" title="Lizard Doggo"><img alt="Lizard Doggo" src="./Official Satisfactory Wiki_files/100px-Lizard_Doggo.png" decoding="async" loading="lazy" width="100" height="100" srcset="/images/thumb/Lizard_Doggo.png/150px-Lizard_Doggo.png?4f2629 1.5x, /images/thumb/Lizard_Doggo.png/200px-Lizard_Doggo.png?4f2629 2x" data-file-width="1200" data-file-height="1200"></a><br><a href="https://satisfactory.wiki.gg/wiki/Lizard_Doggo" title="Lizard Doggo">Lizard Doggo</a></div>
+                                            <div style="display:inline-block; margin: 2px; max-width: 100px; text-align:center; vertical-align: top;"><a href="https://satisfactory.wiki.gg/wiki/Power" title="Power"><img alt="Power" src="./Official Satisfactory Wiki_files/100px-Power_Line.png" decoding="async" loading="lazy" width="100" height="100" srcset="/images/thumb/Power_Line.png/150px-Power_Line.png?d64b2c 1.5x, /images/thumb/Power_Line.png/200px-Power_Line.png?d64b2c 2x" data-file-width="1073" data-file-height="1073"></a><br><a href="https://satisfactory.wiki.gg/wiki/Power" title="Power">Power</a></div>
+                                            <div style="display:inline-block; margin: 2px; max-width: 100px; text-align:center; vertical-align: top;"><a href="https://satisfactory.wiki.gg/wiki/Space_Elevator" title="Space Elevator"><img alt="Space Elevator" src="./Official Satisfactory Wiki_files/100px-Space_Elevator.png" decoding="async" loading="lazy" width="100" height="100" srcset="/images/thumb/Space_Elevator.png/150px-Space_Elevator.png?b12fda 1.5x, /images/thumb/Space_Elevator.png/200px-Space_Elevator.png?b12fda 2x" data-file-width="512" data-file-height="512"></a><br><a href="https://satisfactory.wiki.gg/wiki/Space_Elevator" title="Space Elevator">Space Elevator</a></div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Навигационные блоки снизу контента -->
+                                    <div id="fp-nav" class="fp-section">
+                                        <div class="fpbox mobilecollapsible nomobile" style="text-align: center;">
+                                            <div class="fpHeader">
+                                                <span class="fpHeaderText">Navigation</span>
+                                            </div>
+                                            <div class="body" style="text-align: left; padding: 0 5px 5px 5px">
+
+                                                <!-- Блок 1: Buildings -->
+                                                <div role="navigation" class="navbox" aria-labelledby="Buildings">
+                                                    <table class="nowraplinks mw-collapsible mw-collapsed navbox-inner mw-made-collapsible">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="col" class="navbox-title" colspan="2">
+                                                                    <button type="button" class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" aria-expanded="false" tabindex="0">
+                                                                        <span class="mw-collapsible-text">Expand</span>
+                                                                    </button>
+                                                                    <div class="navbar plainlinks hlist navbar-mini">
+                                                                        <ul>
+                                                                            <li class="nv-view"><a href="https://satisfactory.wiki.gg/wiki/Template:BuildingsNav" title="Template:BuildingsNav"><abbr title="View this template">v</abbr></a></li>
+                                                                            <li class="nv-edit"><a class="text" href="https://satisfactory.wiki.gg/wiki/Template:BuildingsNav?action=edit"><abbr title="Edit this template">e</abbr></a></li>
+                                                                            <li class="nv-hist"><a class="text" href="https://satisfactory.wiki.gg/wiki/Template:BuildingsNav?action=history"><abbr title="History of this template">h</abbr></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div id="Buildings" class="navbox-title-text">
+                                                                        <a href="https://satisfactory.wiki.gg/wiki/Buildings" title="Buildings">Buildings</a>
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <!-- Блок 2: Satisfactory game mechanics -->
+                                                <div role="navigation" class="navbox" aria-labelledby="Satisfactory_game_mechanics">
+                                                    <table class="nowraplinks mw-collapsible mw-collapsed navbox-inner mw-made-collapsible">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="col" class="navbox-title" colspan="2">
+                                                                    <button type="button" class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" aria-expanded="false" tabindex="0">
+                                                                        <span class="mw-collapsible-text">Expand</span>
+                                                                    </button>
+                                                                    <div class="navbar plainlinks hlist navbar-mini">
+                                                                        <ul>
+                                                                            <li class="nv-view"><a href="https://satisfactory.wiki.gg/wiki/Template:GameMechanicsNav" title="Template:GameMechanicsNav"><abbr title="View this template">v</abbr></a></li>
+                                                                            <li class="nv-edit"><a class="text" href="https://satisfactory.wiki.gg/wiki/Template:GameMechanicsNav?action=edit"><abbr title="Edit this template">e</abbr></a></li>
+                                                                            <li class="nv-hist"><a class="text" href="https://satisfactory.wiki.gg/wiki/Template:GameMechanicsNav?action=history"><abbr title="History of this template">h</abbr></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div id="Satisfactory_game_mechanics" class="navbox-title-text">
+                                                                        <a href="https://satisfactory.wiki.gg/wiki/Satisfactory" title="Satisfactory">Satisfactory</a> game mechanics
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <!-- Блок 3: Items and Fluids -->
+                                                <div role="navigation" class="navbox" aria-labelledby="Items_and_Fluids">
+                                                    <table class="nowraplinks mw-collapsible mw-collapsed navbox-inner mw-made-collapsible">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="col" class="navbox-title" colspan="2">
+                                                                    <button type="button" class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" aria-expanded="false" tabindex="0">
+                                                                        <span class="mw-collapsible-text">Expand</span>
+                                                                    </button>
+                                                                    <div class="navbar plainlinks hlist navbar-mini">
+                                                                        <ul>
+                                                                            <li class="nv-view"><a href="https://satisfactory.wiki.gg/wiki/Template:ItemNav" title="Template:ItemNav"><abbr title="View this template">v</abbr></a></li>
+                                                                            <li class="nv-edit"><a class="text" href="https://satisfactory.wiki.gg/wiki/Template:ItemNav?action=edit"><abbr title="Edit this template">e</abbr></a></li>
+                                                                            <li class="nv-hist"><a class="text" href="https://satisfactory.wiki.gg/wiki/Template:ItemNav?action=history"><abbr title="History of this template">h</abbr></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div id="Items_and_Fluids" class="navbox-title-text">
+                                                                        <a href="https://satisfactory.wiki.gg/wiki/Items" class="mw-redirect" title="Items">Items</a> and <a href="https://satisfactory.wiki.gg/wiki/Fluids" title="Fluids">Fluids</a>
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <!-- Блок 4: Flora and Fauna -->
+                                                <div role="navigation" class="navbox" aria-labelledby="Flora_and_Fauna">
+                                                    <table class="nowraplinks mw-collapsible mw-collapsed navbox-inner mw-made-collapsible">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="col" class="navbox-title" colspan="2">
+                                                                    <button type="button" class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" aria-expanded="false" tabindex="0">
+                                                                        <span class="mw-collapsible-text">Expand</span>
+                                                                    </button>
+                                                                    <div class="navbar plainlinks hlist navbar-mini">
+                                                                        <ul>
+                                                                            <li class="nv-view"><a href="https://satisfactory.wiki.gg/wiki/Template:LifeNav" title="Template:LifeNav"><abbr title="View this template">v</abbr></a></li>
+                                                                            <li class="nv-edit"><a class="text" href="https://satisfactory.wiki.gg/wiki/Template:LifeNav?action=edit"><abbr title="Edit this template">e</abbr></a></li>
+                                                                            <li class="nv-hist"><a class="text" href="https://satisfactory.wiki.gg/wiki/Template:LifeNav?action=history"><abbr title="History of this template">h</abbr></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div id="Flora_and_Fauna" class="navbox-title-text">
+                                                                        <a href="https://satisfactory.wiki.gg/wiki/Flora" title="Flora">Flora</a> and <a href="https://satisfactory.wiki.gg/wiki/Fauna" class="mw-redirect" title="Fauna">Fauna</a>
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <!-- Блок 5: Transportation -->
+                                                <div role="navigation" class="navbox" aria-labelledby="Transportation">
+                                                    <table class="nowraplinks mw-collapsible mw-collapsed navbox-inner mw-made-collapsible">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="col" class="navbox-title" colspan="2">
+                                                                    <button type="button" class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" aria-expanded="false" tabindex="0">
+                                                                        <span class="mw-collapsible-text">Expand</span>
+                                                                    </button>
+                                                                    <div class="navbar plainlinks hlist navbar-mini">
+                                                                        <ul>
+                                                                            <li class="nv-view"><a href="https://satisfactory.wiki.gg/wiki/Template:VehicleNav" title="Template:VehicleNav"><abbr title="View this template">v</abbr></a></li>
+                                                                            <li class="nv-edit"><a class="text" href="https://satisfactory.wiki.gg/wiki/Template:VehicleNav?action=edit"><abbr title="Edit this template">e</abbr></a></li>
+                                                                            <li class="nv-hist"><a class="text" href="https://satisfactory.wiki.gg/wiki/Template:VehicleNav?action=history"><abbr title="History of this template">h</abbr></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div id="Transportation" class="navbox-title-text">
+                                                                        <a href="https://satisfactory.wiki.gg/wiki/Vehicles" title="Vehicles">Transportation</a>
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <!-- Блок 6: Patches -->
+                                                <div role="navigation" class="navbox" aria-labelledby="Patches">
+                                                    <table class="nowraplinks mw-collapsible mw-collapsed navbox-inner mw-made-collapsible">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="col" class="navbox-title" colspan="2">
+                                                                    <button type="button" class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" aria-expanded="false" tabindex="0">
+                                                                        <span class="mw-collapsible-text">Expand</span>
+                                                                    </button>
+                                                                    <div class="navbar plainlinks hlist navbar-mini">
+                                                                        <ul>
+                                                                            <li class="nv-view"><a href="https://satisfactory.wiki.gg/wiki/Template:PatchesNav" title="Template:PatchesNav"><abbr title="View this template">v</abbr></a></li>
+                                                                            <li class="nv-edit"><a class="text" href="https://satisfactory.wiki.gg/wiki/Template:PatchesNav?action=edit"><abbr title="Edit this template">e</abbr></a></li>
+                                                                            <li class="nv-hist"><a class="text" href="https://satisfactory.wiki.gg/wiki/Template:PatchesNav?action=history"><abbr title="History of this template">h</abbr></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div id="Patches" class="navbox-title-text">
+                                                                        <a href="https://satisfactory.wiki.gg/wiki/Category:Patch_notes" title="Category:Patch notes">Patches</a>
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="fp-bottom" class="fp-section">
+                                        <div class="fpbox" id="fpwiki" style="text-align: center;">
+                                            <div class="fpHeader">
+                                                <div style="float: right; margin: 5px;"></div>
+                                                <span class="fpHeaderText">Community</span>
+                                            </div>
+                                            <div class="fplinks">
+                                                <div class="fplink-outer plainlinks">
+                                                    <div class="fplink">
+                                                        <div class="fplink-inner">
+                                                            <a href="https://satisfactory.wiki.gg/wiki/Special:UserLogin/signup" title="Special:UserLogin/signup">Register</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="fplink-outer plainlinks">
+                                                    <div class="fplink">
+                                                        <div class="fplink-inner">
+                                                            <a href="https://satisfactory.wiki.gg/wiki/Satisfactory_Wiki:Community_portal" title="Satisfactory Wiki:Community_portal">How to help</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="fplink-outer plainlinks">
+                                                    <div class="fplink">
+                                                        <div class="fplink-inner">
+                                                            <a href="https://satisfactory.wiki.gg/wiki/Satisfactory_Wiki:Style_guide" title="Satisfactory Wiki:Style guide">Style guide</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <hr>
+                                        <div class="nomobile">
+                                            <div>To write a new article, just enter the article title in the box below or in the search box at the top of the page.</div>
+                                            <div class="mw-inputbox-centered">
+                                                <form name="createbox" class="createbox mw-inputbox-form-inline" action="https://satisfactory.wiki.gg/index.php" method="get">
+                                                    <input type="hidden" value="edit" name="action">
+                                                    <div class="cdx-text-input">
+                                                        <input name="title" class="mw-inputbox-createbox cdx-text-input__input" placeholder="" required="" size="50" dir="ltr">
+                                                    </div>
+                                                    <input type="submit" name="create" value="Create page" class="cdx-button cdx-button--action-progressive cdx-button--weight-primary">
+                                                </form>
+                                            </div>
+                                            <hr>
+                                            <div style="text-align: left;">
+                                                <ul>
+                                                    <li>
+                                                        <b>Adding content</b>
+                                                        <ul>
+                                                            <li>If you are unsure of what to do or how to create a page, search for a few articles on the same topic and see what they look like. You can always view the source code in a wiki and learn from what others have done.</li>
+                                                            <li>An edit doesn't have to be massive; if you feel you don't want to create whole articles, then just fixing spelling errors and broken links is enough.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="nomobile" style="text-align: right; margin-right: 10px;">
+                                        <small>
+                                            Main page sections: <a href="https://satisfactory.wiki.gg/wiki/Satisfactory_Wiki/Top_section" title="Satisfactory Wiki/Top section">Top</a> ·
+                                            <a href="https://satisfactory.wiki.gg/wiki/Satisfactory_Wiki/Flex_section" title="Satisfactory Wiki/Flex section">Flex</a> ·
+                                            <a href="https://satisfactory.wiki.gg/wiki/Satisfactory_Wiki/Nav_section" title="Satisfactory Wiki/Nav section">Nav</a> ·
+                                            <a href="https://satisfactory.wiki.gg/wiki/Satisfactory_Wiki/Bottom_section" title="Satisfactory Wiki/Bottom section">Bottom</a>.
+                                            Changes for the main page can be proposed <a href="https://satisfactory.wiki.gg/wiki/Talk:Satisfactory_Wiki" title="Talk:Satisfactory Wiki">here</a>.
+                                        </small>
+                                    </div>
+
+                                    
+
+                                </div>
+                                <div id="catlinks" class="catlinks" data-mw="interface">
+                                    <div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://satisfactory.wiki.gg/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="https://satisfactory.wiki.gg/wiki/Category:Satisfactory_Wiki" title="Category:Satisfactory Wiki">Satisfactory Wiki</a></li></ul></div>
+                                </div>
+                                <aside id="wikigg-sl-footer" data-mw="WggShowcaseLayout">
+                                    <div class="wikigg-showcase__unit wikigg-showcase__reserved--lb" data-wgg-unit-type="internal"><a target="_blank" href="https://app.wiki.gg/showcase/go?utm_campaign=iio-29ed9a83-1789064634710&amp;utm_medium=bannerfooter&amp;utm_source=satisfactory.wiki.gg&amp;location=desktop"><img src="./Official Satisfactory Wiki_files/LEADERBOARD.jpg"></a></div>
+                                </aside>
+
+
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+
+           
+
+
+
+            <div id="mw-data-after-content"></div>
+        </div>
+
+        <!-- Правая колонка (Updates, Video, Social Media) -->
+        <div class="sidebar-right-column">
+            <div id="fp-flex" class="fp-section">
+                <!-- Блок обновлений (Updates) -->
+                <div class="fpbox mobilecollapsible" id="fpguides" style="text-align: center;">
+                    <div class="fpHeader">
+                        <span class="fpHeaderText">Updates</span>
+                    </div>
+                    <div class="body" style="text-align: left; display: inline-block; margin: auto;">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">
+                                        <div class="center">
+                                            <div class="floatnone">
+                                                <a href="https://satisfactory.wiki.gg/wiki/Patch_1.2.2.2" title="Patch 1.2.2.2">
+                                                    <img alt="Update1.2 Sign Logo.png" src="./Official Satisfactory Wiki_files/300px-Update1.2_Sign_Logo.png" width="300" height="78">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;"><b>Major update</b>:</td>
+                                    <td><a href="https://satisfactory.wiki.gg/wiki/Patch_1.2.2.2" title="Patch 1.2.2.2">1.2 release</a> (released 110 days ago)</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;"><b>Stable</b>:</td>
+                                    <td><a href="https://satisfactory.wiki.gg/wiki/Patch_1.2.4.0" title="Patch 1.2.4.0">1.2.4.0</a> (released 40 days ago)</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;"><b>Experimental</b>:</td>
+                                    <td><a href="https://satisfactory.wiki.gg/wiki/Patch_1.2.4.0" title="Patch 1.2.4.0">1.2.4.0</a> (released 40 days ago)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <a href="https://satisfactory.wiki.gg/wiki/Category:Patch_notes" title="Category:Patch notes">Version history</a> •
+                        <a href="https://satisfactory.wiki.gg/wiki/Future_content" title="Future content">Future content</a>
+                    </div>
+                </div>
+
+                <!-- Блок избранного видео (Featured Video) -->
+                <div class="fpbox mobilecollapsible" id="fpvideos" style="text-align: center;">
+                    <div class="fpHeader">
+                        <span class="fpHeaderText">Featured Video</span>
+                    </div>
+                    <div class="body fpvideos">
+                        <div class="fpvideo">
+                            <figure class="embedvideo mw-halign-center" style="width: 480px;">
+                                <div class="embedvideo-wrapper" style="height: 270px;">
+                                    <div class="embedvideo-consent">
+                                        <div class="embedvideo-overlay">
+                                            <div class="embedvideo-loader" role="button">
+                                                <div class="embedvideo-loader__fakeButton">Load video</div>
+                                                <div class="embedvideo-loader__footer">
+                                                    <div class="embedvideo-loader__service">YouTube</div>
+                                                </div>
+                                            </div>
+                                            <div class="embedvideo-privacyNotice hidden">
+                                                <div class="embedvideo-privacyNotice__content">
+                                                    YouTube might collect personal data.
+                                                    <a href="https://www.youtube.com/howyoutubeworks/user-settings/privacy/" rel="nofollow,noopener" target="_blank" class="embedvideo-privacyNotice__link">Privacy Policy</a>
+                                                </div>
+                                                <div class="embedvideo-privacyNotice__buttons">
+                                                    <button class="embedvideo-privacyNotice__continue">Continue</button>
+                                                    <button class="embedvideo-privacyNotice__dismiss">Dismiss</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fpbox" id="fp-social" style="text-align: center;">
+                <div class="fpHeader">
+                    <span class="fpHeaderText">Social Media</span>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                    <!-- Первая группа иконок -->
+                    <div class="body" style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; align-items: center;">
+                        <p><a href="https://www.satisfactorygame.com/" rel="nofollow"><img alt="Official Website" src="./Official Satisfactory Wiki_files/48px-Satisfactory_logo_full_color_square.png" width="48" height="48"></a></p>
+                        <p><a href="https://lizarddoggo.com/" rel="nofollow"><img alt="Official Merch" src="./Official Satisfactory Wiki_files/48px-Lizard_Doggo.png" width="48" height="48"></a></p>
+                        <p><a href="https://store.steampowered.com/app/526870/Satisfactory/" rel="nofollow"><img alt="Steam" src="./Official Satisfactory Wiki_files/Steam.svg" width="48" height="48"></a></p>
+                        <p><a href="https://www.epicgames.com/store/en-US/product/satisfactory/home" rel="nofollow"><img alt="Epic Games" src="./Official Satisfactory Wiki_files/Epic_Games.svg" width="48" height="56"></a></p>
+                        <p><a href="https://www.humblebundle.com/store/satisfactory" rel="nofollow"><img alt="Humble Bundle" src="./Official Satisfactory Wiki_files/Humble.svg" width="48" height="48"></a></p>
+                    </div>
+
+                    <hr style="width: 100%;">
+
+                    <!-- Вторая группа иконок -->
+                    <div class="body" style="display: inline-flex; flex-wrap: wrap; gap: 1em; justify-content: center; align-items: center;">
+                        <p><a href="https://www.youtube.com/CoffeeStainStudios" rel="nofollow"><img alt="YouTube" src="./Official Satisfactory Wiki_files/YouTube.svg" width="48" height="33"></a></p>
+                        <p><a href="https://www.twitch.tv/coffeestainstudiosdevs" rel="nofollow"><img alt="Twitch" src="./Official Satisfactory Wiki_files/Twitch.svg" width="44" height="51"></a></p>
+                        <p><a href="https://discord.gg/satisfactory" rel="nofollow"><img alt="Discord" src="./Official Satisfactory Wiki_files/Discord.svg" width="48" height="37"></a></p>
+                        <p><a href="https://www.facebook.com/SatisfactoryGame/" rel="nofollow"><img alt="Facebook" src="./Official Satisfactory Wiki_files/Facebook.svg" width="48" height="48"></a></p>
+                    </div>
+
+                    <!-- Третья группа иконок -->
+                    <div class="body" style="display: inline-flex; flex-wrap: wrap; gap: 1em; justify-content: center; align-items: center;">
+                        <p><a href="https://www.instagram.com/coffee_stain_studios/" rel="nofollow"><img alt="Instagram" src="./Official Satisfactory Wiki_files/Instagram.svg" width="48" height="48"></a></p>
+                        <p><a href="https://www.reddit.com/r/SatisfactoryGame/" rel="nofollow"><img alt="Reddit" src="./Official Satisfactory Wiki_files/Reddit.svg" width="48" height="48"></a></p>
+                        <p><a href="https://twitter.com/SatisfactoryAF/" rel="nofollow"><img alt="Twitter (X)" src="./Official Satisfactory Wiki_files/X.svg" width="48" height="49"></a></p>
+                        <p><a href="https://www.tiktok.com/@satisfactorygame" rel="nofollow"><img alt="TikTok" src="./Official Satisfactory Wiki_files/TikTok.svg" width="40" height="45"></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="mw-footer">
+        <ul id="footer-info">
+            <li id="footer-info-lastmod"> This page was last edited on 8 November 2024, at 01:21.</li>
+            <li id="footer-info-copyright"><div class="wikigg-copyright-box">Pages that were created prior to March 2023 are adapted from the Satisfactory Fandom wiki.<br>Page content is under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by-nc-sa/4.0">Creative Commons Attribution-Non-Commercial-ShareAlike 4.0 License</a> unless otherwise noted.</div></li>
+        </ul>
+
+        <ul id="footer-places">
+            <li id="footer-places-wikigg-tos"><a href="https://www.indie.io/terms-of-service">Terms of Service</a></li>
+            <li id="footer-places-wikigg-privacy"><a href="https://www.indie.io/privacy-policy">Privacy policy</a></li>
+            <li id="footer-places-wikigg-support"><a href="https://support.wiki.gg/">Support Wiki</a></li>
+            <li id="footer-places-wikigg-servicedesk"><a href="https://wiki.gg/go/servicedesk">Send a ticket to wiki.gg</a></li>
+            <li id="footer-places-wikigg-statuspage"><a href="https://wikiggstatus.com/">Status page</a></li>
+            <li id="footer-places-wikigg-pcmp"><a href="https://satisfactory.wiki.gg/#" class="nn-cmp-show" style="display: none">Manage cookie settings</a></li>
+        </ul>
+
+        <ul id="footer-icons" class="noprint">
+            <li id="footer-copyrightico"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><img src="./Official Satisfactory Wiki_files/CC-BY-NC-SA_footer_badge.svg" alt="Creative Commons Attribution-Non-Commercial-ShareAlike 4.0 License" height="31" width="88" loading="lazy" data-theme="light"><img src="./Official Satisfactory Wiki_files/CC-BY-NC-SA_footer_badge_dark.svg" alt="Creative Commons Attribution-Non-Commercial-ShareAlike 4.0 License" height="31" width="88" loading="lazy" data-theme="dark"></a></li>
+            <li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><img src="./Official Satisfactory Wiki_files/MediaWiki_footer_badge.svg" alt="Powered by MediaWiki" width="88" height="31" loading="lazy" data-theme="light"><img src="./Official Satisfactory Wiki_files/MediaWiki_footer_badge_dark.svg" alt="Powered by MediaWiki" width="88" height="31" loading="lazy" data-theme="dark"></a></li>
+            <li id="footer-partofico"><a href="https://wiki.gg/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><img src="./Official Satisfactory Wiki_files/Network_footer_badge.svg" alt="Part of wiki.gg" height="31" width="88" loading="lazy" data-theme="light"><img src="./Official Satisfactory Wiki_files/Network_footer_badge_dark.svg" alt="Part of wiki.gg" height="31" width="88" loading="lazy" data-theme="dark"></a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

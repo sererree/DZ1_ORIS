@@ -1,0 +1,673 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px; 
+    position: relative;
+}
+
+
+
+
+#wgg-netbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000538;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 0 15px;
+    height: 35px;
+}
+
+.wgg-netbar__left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.wgg-netbar__logo img {
+    display: block;
+    margin: 1px;
+    height: 25px;
+    gap: 3px;
+}
+
+.wgg-netbar__deals-link {
+    background-color: #29305c;
+    border-radius: 5px;
+    color: #fcfcfc;
+    padding: 1px 3px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+    .wgg-netbar__deals-link:hover {
+        text-decoration: underline;
+    }
+
+.wgg-netbar__deals-link__icon {
+    height: 14px;
+    width: auto;
+}
+
+/* Правая часть шапки (личный кабинет / темы) */
+#wgg-netbar nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    gap: 15px;
+}
+
+#wgg-netbar a {
+    text-decoration: none;
+    color: #fcfcfc;
+    font-size: 14px;
+}
+
+    #wgg-netbar a:hover {
+        text-decoration: underline;
+    }
+
+#pt-themes span {
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+
+.content-wrapper {
+    margin-top: 40px;
+}
+
+
+.logo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+    .logo2 img {
+        max-width: 300px;
+        height: auto;
+    }
+
+content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#mw-navigation {
+    width: 100%;
+}
+
+#mw-head {
+    display: flex;
+    flex-direction: row;
+    background-color: #e1e1e1;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    align-items: center;
+}
+
+#left-navigation {
+    display: flex;
+    align-items: center;
+}
+
+#right-navigation {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 15px;
+}
+
+#p-namespaces ul,
+#p-views ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    gap: 10px;
+    margin: 0 10px;
+}
+
+#mw-head li {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+#mw-head a {
+    text-decoration: none;
+    color: #1a56b0;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#ca-nstab-main a {
+    color: #000;
+}
+
+#ca-nstab-main.selected a,
+#ca-view.selected a {
+    color: #000;
+    background-color: #e59344;
+    height: 30px;
+    width: 80px;
+}
+
+#ca-talk a,
+#ca-history a,
+#ca-viewsource a {
+    width: 80px;
+    color: #1a56b0;
+}
+
+
+
+/* Поиск */
+#p-search form {
+    display: inline-flex;
+    white-space: nowrap;
+    align-items: center;
+}
+
+#simpleSearch {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#searchInput {
+    width: 160px;
+    height: 32px;
+    padding: 4px 10px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #4a5568;
+    background-color: #d8d8d8;
+    border: 1px solid #a2a2a2;
+    border-radius: 2px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.searchButton {
+    height: 30px;
+    padding: 0 10px;
+    font-size: 13px;
+    background-color: #f0f0f0;
+    border: 1px solid #a2a2a2;
+    border-radius: 3px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/* Боковая панель (Sidebar / mw-panel) */
+#mw-panel {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+
+
+#p-logo {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.portal {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+    .portal h3,
+    .portal .vector-menu-heading {
+        display: block;
+        background-color: #e1e1e1;
+        width: 140px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 14.4px;
+        font-weight: 400;
+        align-items: center;
+        padding: 4px 10px;
+        border-bottom: 2px solid #fa9549;
+    }
+
+    
+
+    .portal .body {
+        border-top: 2px solid #fa9549;
+        background-color: #e1e1e1;
+        width: 140px;
+        display: flex;
+        flex-direction: column;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        gap: 5px;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+    }
+
+        .portal .body ul {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            gap: 5px;
+            padding: 0;
+        }
+
+        .portal .body li {
+            display: flex;
+        }
+
+        .portal .body a {
+            text-decoration: none;
+            color: #1a56b0;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+/* Основной контент */
+#content, .content-body {
+    flex-grow: 1;
+    padding: 10px;
+    width: 99%;
+    margin: 0 auto;
+    background-color: #e1e1e1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#wikigg-sl-header {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.wikigg-showcase__unit img {
+    max-width: 100%;
+    height: auto;
+}
+
+#fp-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 10px;
+    align-items: flex-start;
+}
+
+#fp-top {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+}
+
+.fpbox {
+    background-color: #d1d1d1;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+.fpHeader {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 6px 12px;
+    margin: -10px -10px 10px -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    overflow: hidden; /* Скрываем вылезающие части текстуры */
+    /* Составной фон с картинками и градиентом */
+    background: url(https://satisfactory.wiki.gg/images/c/c9/Corner_top_left.png) no-repeat top left border-box, url(https://satisfactory.wiki.gg/images/8/8e/Bolt.png) no-repeat bottom left border-box, url(https://satisfactory.wiki.gg/images/8/8e/Bolt.png) no-repeat bottom right border-box, url(https://satisfactory.wiki.gg/images/5/50/Middle.png) repeat-x center left border-box, linear-gradient(to bottom, #465461, #4F4136);
+    background-size: auto, auto, auto, auto, cover;
+}
+
+    /* Наложение текстуры строго внутри шапки */
+    .fpHeader::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(https://satisfactory.wiki.gg/images/a/a8/Texture.png);
+        opacity: 0.1;
+        z-index: 1;
+        pointer-events: none;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+/* Текст внутри шапки поднимаем поверх текстуры */
+.fpHeaderText {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    margin: 0 auto;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.fpbox .body a {
+    color: #1a56b0;
+}
+
+.fpbox .body ul {
+    display: block;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.fpbox .body li {
+    display: list-item;
+    margin-bottom: 8px;
+}
+
+
+.fplinks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 15px;
+    text-align: center;
+}
+
+
+#fpguides table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#fpguides td,
+#fpguides th {
+    text-align: center;
+    padding: 4px;
+}
+
+    #fpguides td:first-child {
+        text-align: right;
+        padding-right: 8px;
+    }
+
+    #fpguides td:last-child {
+        text-align: left;
+        padding-left: 8px;
+    }
+
+#fp-social .body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 5px 0;
+}
+
+#catlinks {
+    background-color: #d1d1d1;
+    border: 1px solid #a8a8a8;
+    border-radius: 4px;
+    padding: 6px 12px;
+    margin: 12px 0;
+    font-size: 13px;
+    width: 99%;
+    display: flex;
+}
+
+    #catlinks a {
+        color: #1a56b0;
+    }
+
+    #catlinks ul {
+        display: inline;
+        list-style: none;
+        padding: 0;
+    }
+
+    #catlinks li {
+        display: inline;
+    }
+
+.page-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Левая навигационная колонка */
+.sidebar-column {
+    width: 150px;
+    flex-shrink: 0;
+}
+
+/* Центральная колонка с основным контентом */
+.main-content-column {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Правая колонка (Updates, Video, Social Media) */
+.sidebar-right-column {
+    width: 320px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 170px;
+}
+
+.navbox {
+    width: 100%;
+    margin-bottom: 2px;
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+}
+
+.navbox-inner {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.navbox-title {
+    background-color: #eaecf0;
+    padding: 4px 10px;
+    font-size: 13px;
+    position: relative;
+    text-align: center;
+    border-top: 1px solid #a2a9b1;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+   
+    .navbox-title .navbar {
+        float: left;
+        font-size: 11px;
+    }
+
+        .navbox-title .navbar ul {
+            display: flex;
+            gap: 4px;
+            list-style: none;
+        }
+
+
+.navbox-title-text {
+    display: inline-block;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+    .navbox-title-text a {
+        color: #0645ad;
+        text-decoration: none;
+    }
+
+        .navbox-title-text a:hover {
+            text-decoration: underline;
+        }
+
+
+.navbox-title .mw-collapsible-toggle {
+    float: right;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    color: #0645ad;
+}
+
+    .navbox-title .mw-collapsible-toggle:hover {
+        text-decoration: underline;
+    }
+
+#fpwiki .fplinks {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#fpwiki .fplink-outer {
+    flex: 1;
+}
+
+#fpwiki .fplink {
+    background: linear-gradient(to bottom, #fcfcfc, #d8d8d8);
+    border: 1px solid #a2a2a2;
+    border-radius: 20px;
+    padding: 6px 15px;
+    text-align: center;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+    #fpwiki .fplink:hover {
+        background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+    }
+
+    #fpwiki .fplink a {
+        color: #1a56b0;
+        font-weight: 600;
+        text-decoration: none;
+        display: block;
+    }
+
+#wikigg-sl-footer {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100%;
+    padding: 0 10px;
+}
+
+    #wikigg-sl-footer img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+#footer.mw-footer {
+    background-color: #e1e1e1;
+    border-top: 1px solid #c8c8c8;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #4a5568;
+    width: 100%;
+    max-width: 3500px;
+    margin-left: 180px;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+#footer-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#footer-places {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+    #footer-places a {
+        color: #1a56b0;
+        text-decoration: none;
+    }
+
+        #footer-places a:hover {
+            text-decoration: underline;
+        }
+
+
+.main-content-column .fpHeader,
+.sidebar-right-column .fpHeader
+ {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px; /* При необходимости можно скорректировать размер */
+    letter-spacing: 1px; /* Добавляет фирменный «широкий» стиль */
+}
