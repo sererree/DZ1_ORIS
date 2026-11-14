@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Автоматически копируем все папки и стили из корня в папку сборки при билде -->
+    <None Update="static\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="pictures\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="*.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="*.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="settings.json" />
+    <Content Include="hello.html" />
+    <Content Include="static\Login Form\login.html" />
+    <Content Include="static\Login Form\style.css" />
+    <Content Include=".vscode\settings.json" />
+    <Content Include="Framework\Core\HttpServer.cs" />
+    <Content Include="Program.cs" />
+    <Content Include="Framework\Attributes\GetAttribute.cs" />
+    <Content Include="Controllers\AuthController.cs" />
+    <Content Include="Controllers\Program.cs" />
+    <Content Include="Framework\Handlers\StaticFileHandler.cs" />
+    <Content Include="Framework\Handlers\Handler.cs" />
+    <Content Include="static\404.html" />
+    <Content Include="Framework\ControllerBase.cs" />
+    <Content Include="Controllers\SteamController.cs" />
+    <Content Include="Framework\Handlers\ControllerHandler.cs" />
+  </ItemGroup>
+</Project>
