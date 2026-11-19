@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список пользователей</title>
+</head>
+<body>
+    <h2>Список пользователей</h2>
+    <ul>
+    $foreach(var user in Users)
+        $if(user.IsActive)
+            <li>${user.Name} — активен</li>
+        $else
+            <li>${user.Name} — неактивен</li>
+        $endif
+    $endfor
+    </ul>
+</body>
+</html>
