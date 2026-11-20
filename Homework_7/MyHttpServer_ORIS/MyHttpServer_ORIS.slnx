@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="MyHttpServer_ORIS.csproj" />
+  <Project Path="MiniHttpServer.HtmlTemplating/MiniHttpServer.HtmlTemplating.csproj" />
+  <Project Path="MiniHttpServer.Framework/MiniHttpServer.Framework.csproj" />
+  <Project Path="MiniHttpServer.HtmlTemplating.UnitTests/MiniHttpServer.HtmlTemplating.UnitTests.csproj" />
+  <Project Path="MiniHttpServer.Framework.UnitTests/MiniHttpServer.Framework.UnitTests.csproj" />
+</Solution>
